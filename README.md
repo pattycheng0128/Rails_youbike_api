@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+How to run:
+* bundle exec rake dev:fetch_bike
 
-Things you may want to cover:
+Frontend: 
+* Bootstrap
 
-* Ruby version
+Backend:
+* Rails
 
-* System dependencies
+Database: 
+* PostgreSQL
 
-* Configuration
+Gems:
+* rest-client
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+API: 
+* Youbike
