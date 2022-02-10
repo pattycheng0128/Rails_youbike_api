@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>站點代號</th>
+      <th>場站中文名稱</th>
+      <th>場站總停車格</th>
+      <th>場站目前車輛數量</th>
+      <th>場站區域</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @youbikes.each do |youbike| %>
+      <tr>
+        <td><%= youbike.sno_id %></td>
+        <td><%= youbike.sna %></td>
+        <td><%= youbike.tot %></td>
+        <td><%= youbike.sbi %></td>
+        <td><%= youbike.sarea %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

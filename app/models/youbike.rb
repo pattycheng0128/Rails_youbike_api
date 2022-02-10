@@ -1,0 +1,2 @@
+class Youbike < ApplicationRecord
+end
