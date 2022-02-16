@@ -5,10 +5,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <%= search_form_for @query, class:"d-flex" do |s| %>
+        <%= s.search_field :sarea_cont, class:"form-control me-2", placeholder:"輸入查詢的區域" %>
+        <%= s.submit "Search",class:"btn btn-outline-success"  %>
+      <% end %>
     </div>
   </div>
 </nav>

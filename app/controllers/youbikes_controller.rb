@@ -1,7 +1,8 @@
 class YoubikesController < ApplicationController
 
   def index
-    @youbikes = Youbike.all
+    @query = Youbike.all.ransack(params[:q])
+    @youbikes = @query.result(distinct: true)
   end
   
 end
